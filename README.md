@@ -23,9 +23,7 @@ Each project is organized day-wise:
 Day-01/
 │── index.html      # Structure
 │── style.css       # Styling
-│── script.js       # Functionality
-│── flow.md         # Planning & logic
-│── screenshot.png  # Preview
+│── script.js       # Functionality/Logic
 💡 What I Learned
 📌 Importance of planning before coding
 📌 Writing structured and reusable code
@@ -33,22 +31,6 @@ Day-01/
 📌 Using LocalStorage for data persistence
 📌 Improving UI/UX with responsive design
 🚀 Getting Started
-
-To run any project locally:
-
-Clone the repository
-
-git clone https://github.com/your-username/your-repo-name.git
-Open any project folder
-Run the index.html file in your browser
-📈 Progress Tracker
-✅ Day 1 – Completed
-✅ Day 2 – Completed
-⏳ Ongoing...
-📬 Connect With Me
-💼 LinkedIn: [Your LinkedIn Link]
-🌐 Portfolio: [Your Portfolio Link]
-🙏 Acknowledgment
 
 Special thanks to my mentors and learning resources that guided me throughout this journey.
 
