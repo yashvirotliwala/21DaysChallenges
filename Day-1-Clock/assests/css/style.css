@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #0b0020, #2a0a5e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+}
+
+/* Glass Clock Box */
+.clock-box {
+  padding: 30px 60px;
+  border-radius: 15px;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+/* Time Layout */
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  width: 400px;
+  height: 90px;
+}
+
+.time h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.time p {
+  font-size: 12px;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+
+.time span {
+  font-size: 40px;
+}
+
+/* Shapes */
+.shape {
+  position: absolute;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.pink {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #f84a9b, #ff4da6);
+  top: -50px;
+  left: -40px;
+  border-radius: 20px;
+}
+
+.blue {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #00c6ff, #77b1f8);
+  bottom: -50px;
+  right: -40px;
+  border-radius: 50%;
+}
+
+/* Text */
+.title {
+  margin-top: 40px;
+  font-size: 32px;
+  color: white;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 28px;
+  color: white;
+}
+
+.subtitle span {
+  background: #ffd84d;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.fullDay{
+  color: white;
+  padding: 12px 0px;
+}
