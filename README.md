@@ -1,0 +1,58 @@
+🚀 21 Days Frontend Development Challenge
+📌 Overview
+
+This repository showcases my 21 Days Frontend Development Challenge, where I focus on building practical and real-world projects using HTML,CSS,Java-Script and React-Js.
+The goal is to improve problem-solving skills, strengthen fundamentals, and build a strong portfolio.
+
+🎯 Objectives
+🔹 Build 21 unique frontend projects in 21 days
+🔹 Improve HTML, CSS, and JavaScript fundamentals
+🔹 Follow a structured development approach (Plan → Design → Build)
+🔹 Practice writing clean and maintainable code
+🔹 Develop portfolio-ready applications
+🛠️ Technologies Used
+HTML5
+CSS3 (Flexbox, Grid, Responsive Design)
+JavaScript (ES6+)
+Browser APIs (LocalStorage, DOM)
+REST APIs (in advanced projects)
+📁 Folder Structure
+
+Each project is organized day-wise:
+
+Day-01/
+│── index.html      # Structure
+│── style.css       # Styling
+│── script.js       # Functionality
+│── flow.md         # Planning & logic
+│── screenshot.png  # Preview
+💡 What I Learned
+📌 Importance of planning before coding
+📌 Writing structured and reusable code
+📌 Handling edge cases and user interactions
+📌 Using LocalStorage for data persistence
+📌 Improving UI/UX with responsive design
+🚀 Getting Started
+
+To run any project locally:
+
+Clone the repository
+
+git clone https://github.com/your-username/your-repo-name.git
+Open any project folder
+Run the index.html file in your browser
+📈 Progress Tracker
+✅ Day 1 – Completed
+✅ Day 2 – Completed
+⏳ Ongoing...
+📬 Connect With Me
+💼 LinkedIn: [Your LinkedIn Link]
+🌐 Portfolio: [Your Portfolio Link]
+🙏 Acknowledgment
+
+Special thanks to my mentors and learning resources that guided me throughout this journey.
+
+⭐ Support
+
+If you find this repository useful, consider giving it a star ⭐ — it motivates me to keep building!
+
