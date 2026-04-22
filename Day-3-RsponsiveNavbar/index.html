@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Responsive Navbar</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./assests/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assests/css/style.css">
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>eTrade</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+
+            <button class="hire-btn">Hire Us</button>
+
+            <button class="menu-btn" id="openMenu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </nav>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+
+        <div class="sidebar-top">
+
+            <div class="sidebar-logo">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>eTrade</span>
+            </div>
+
+            <button class="close-btn" id="closeMenu">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+        <ul class="sidebar-menu">
+            <li class="active"><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="#"><i class="fa-solid fa-phone"></i> Contact</a></li>
+            <li><a href="#"><i class="fa-solid fa-user"></i> About</a></li>
+            <li><a href="#"><i class="fa-solid fa-circle-question"></i> Help</a></li>
+            <li><a href="#"><i class="fa-solid fa-briefcase"></i> Services</a></li>
+            <li><a href="#"><i class="fa-solid fa-envelope"></i> Messages</a></li>
+        </ul>
+
+        <button class="hire-btn">Hire Us</button>
+
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="./assests/js/script.js"></script>
+
+</body>
+
+</html>
