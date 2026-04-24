@@ -6,7 +6,7 @@ const slidesData = [
             "https://navbharattours.com/wp-content/uploads/thumb_720_450_Jungledreamstime_l_56902828.jpg",
             "https://assets.cntraveller.in/photos/62cec94f5ef6672406ac7294/4:3/w_3264,h_2448,c_limit/650031609"
         ],
-        title : "jungle"
+        title: "jungle"
     },
     {
         images: [
@@ -15,7 +15,7 @@ const slidesData = [
             "https://m.media-amazon.com/images/I/71K4EWjvoPL._AC_UF894,1000_QL80_.jpg",
             "https://media.timeout.com/images/106041640/image.jpg"
         ],
-        title : "mountains"
+        title: "mountains"
     },
     {
         images: [
