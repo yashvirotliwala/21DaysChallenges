@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do App</title>
+
+    <link rel="stylesheet" href="./assests/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assests/css/style.css">
+
+</head>
+<body class="bkg d-flex justify-content-center align-items-center">
+
+    <div class="card custom-card shadow">
+        <div class="card-body text-center">
+            <h5 class="card-title fs-3 fw-bold">To-do App</h5>
+
+            <div class="lab">
+                <input type="text" id="name" class="form-control" placeholder="Enter a task...">
+            </div>
+
+            <button onclick="addTask()" class="button w-100 mt-2 fs-5">
+                Add Task
+            </button>
+
+            <ul id="taskList" class="list-group mt-3"></ul>
+
+        </div>
+    </div>
+
+    <script src="./assests/js/script.js"></script>
+
+</body>
+
+</html>
