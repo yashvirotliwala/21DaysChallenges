@@ -6,7 +6,6 @@ body {
     margin: 0;
 }
 
-/* Background fix */
 .bkg {
     background: url(../images/bg3.jpg);
     min-height: 100vh;
@@ -15,17 +14,14 @@ body {
     background-position: center;
 }
 
-/* Card */
 .card {
     border-radius: 20px;
 }
 
-/* Responsive padding using clamp 🔥 */
 .card-body {
     padding: clamp(20px, 4vw, 40px);
 }
 
-/* Title */
 .card-title {
     margin: 15px 0;
     color: #073596;
@@ -41,7 +37,6 @@ body {
     border-radius: 10px;
 }
 
-/* Button */
 .button {
     padding: 10px;
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
@@ -57,37 +52,32 @@ body {
     transform: scale(1.05);
 }
 
-/* Card fixed but responsive */
 .custom-card {
     width: 100%;
     max-width: 400px;
-    /* 🔥 FIXED max size */
+
     margin: 15px;
     border-radius: 20px;
 }
 
-/* Body padding stable */
 .card-body {
     padding: 25px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 20px;
 }
 
-/* Title */
 .card-title {
     font-size: 22px;
     margin: 15px 0;
     color: #073596;
 }
 
-/* Input */
 #name {
     text-align: center;
     border: 1px dashed rgb(8, 8, 139);
     border-radius: 10px;
 }
 
-/* Button */
 .button {
     padding: 10px;
     font-size: 16px;

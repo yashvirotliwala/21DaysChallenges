@@ -1,0 +1,130 @@
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background: #f6f7fb;
+    color: #333;
+}
+
+.app {
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+h4 {
+    font-weight: 600;
+}
+
+input,
+select {
+    border-radius: 8px !important;
+    border: 1px solid #eee !important;
+}
+
+input:focus,
+select:focus {
+    border-color: #cdb4db !important;
+    box-shadow: 0 0 0 2px rgba(205, 180, 219, 0.2) !important;
+}
+
+.task {
+    background: #faf7ff;
+    border: 1px solid #f0e6ff;
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeIn 0.3s ease forwards;
+}
+
+.task:hover {
+    background: #f3ecff;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.task.removing {
+    animation: fadeOut 0.3s ease forwards;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.actions button {
+    border: none;
+    background: none;
+    font-size: 14px;
+    margin-left: 8px;
+    cursor: pointer;
+    color: #b5a3d5;
+    font-size: 20px;
+}
+
+.actions button:hover {
+    color: #8e7cc3;
+}
+
+.filters button {
+    border: none;
+    background: #e7ddff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin: 2px;
+    font-size: 13px;
+    color: #6d5ba6;
+}
+
+.filters button:hover {
+    background: #d6c7ff;
+}
+
+.btn-add {
+    background: #cdb4db;
+    border: none;
+    color: white;
+}
+
+.btn-add:hover {
+    background: #b89bd1;
+}
+
+.dark {
+    background: #1a1a2e;
+    color: #fff;
+}
+
+.dark .app {
+    background: #22223b;
+}
+
+.dark .task {
+    background: #2a2a4a;
+    border: 1px solid #3a3a5a;
+}
+
+@media(max-width: 576px) {
+    .task {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

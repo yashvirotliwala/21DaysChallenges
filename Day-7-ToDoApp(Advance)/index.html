@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastel Task Manager</title>
+
+    <link rel="stylesheet" href="./assests/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assests/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="app">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h4>Tasks</h4>
+        </div>
+
+        <input type="text" id="search" class="form-control mb-3" placeholder="Search...">
+
+        <div class="row g-2 mb-3">
+            <div class="col-12 col-md-5">
+                <input type="text" id="taskInput" class="form-control" placeholder="New task">
+            </div>
+            <div class="col-6 col-md-3">
+                <select id="category" class="form-select">
+                    <option>Work</option>
+                    <option>Personal</option>
+                    <option>Study</option>
+                </select>
+            </div>
+            <div class="col-6 col-md-2">
+                <input type="date" id="date" class="form-control">
+            </div>
+            <div class="col-12 col-md-2">
+                <button onclick="addTask()" class="btn btn-add w-100">Add</button>
+            </div>
+        </div>
+
+        <div class="filters text-center mb-3">
+            <button class="icons" onclick="filterTasks('all')">All</button>
+            <button class="icons" onclick="filterTasks('completed')">Done</button>
+            <button class="icons" onclick="filterTasks('pending')">Todo</button>
+        </div>
+
+        <div id="taskList"></div>
+
+        <p id="progress" class="text-center mt-3 text-muted"></p>
+    </div>
+
+    <script src="./assests/js/script.js"></script>
+
+</body>
+
+</html>
