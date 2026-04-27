@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #a18cd1, #8ec5fc);
+}
+
+.container {
+  width: 420px;
+  margin: 40px auto;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+  background: linear-gradient(to right, #5516b9, #d41996);
+  font-size: 18px;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.note {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 15px;
+  position: relative;
+}
+
+.note input {
+  width: 100%;
+  border: none;
+  font-weight: bold;
+  margin: 12px 0px;
+  font-size: 20px;
+  outline: none;
+}
+
+.note textarea {
+  width: 100%;
+  border: none;
+  resize: none;
+  margin-top: 5px;
+  outline: none;
+  font-size: 14px;
+}
+
+.note small {
+  color: gray;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.delete {
+  cursor: pointer;
+  color: red;
+}
+
+.color-picker span {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.img i{
+  color: #194ba3;
+}
+
+h1{
+  color: #194ba3;
+}
