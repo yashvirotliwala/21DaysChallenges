@@ -1,15 +1,15 @@
-// script.js
+
 
 const cityInput = document.getElementById("cityInput");
 const searchBtn = document.getElementById("searchBtn");
 const weatherDisplay = document.getElementById("weatherDisplay");
-const apiKey = "a389bd5a6d85eae06c8bbe2a8aad8285"; 
+const apiKey = "a389bd5a6d85eae06c8bbe2a8aad8285";
 
 
-// Search button click
+
 searchBtn.addEventListener("click", getWeather);
 
-// Enter key press
+
 cityInput.addEventListener("keypress", function (e) {
     if (e.key === "Enter") {
         getWeather();
@@ -53,7 +53,7 @@ async function getWeather() {
     }
 }
 
-// Display Weather Data
+
 function showWeather(data) {
     const cityName = data.name;
     const country = data.sys.country;
