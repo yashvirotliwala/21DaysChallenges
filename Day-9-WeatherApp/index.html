@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Weather Card</title>
+
+    <link rel="stylesheet" href="./assests/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assests/css/style.css">
+</head>
+
+<body>
+    <div class="weather-app">
+        <div class="weather-card">
+            <div class="brand">
+                <h1>✦ Check WeatherStatus ✦</h1>
+                <p>immersive weather · realtime atmosphere</p>
+            </div>
+
+            <div class="search-section">
+                <input type="text" id="cityInput" class="city-input" placeholder="London, Tokyo, New York...">
+                <button id="searchBtn" class="btn btn-primary">Get Weather</button>
+            </div>
+
+            <div id="weatherDisplay" class="weather-data-card">
+                <!-- dynamic content will be injected -->
+                <div class="loading-message">✨ loading celestial data ...</div>
+            </div>
+            <div class="footer-note">
+                ⚡ powered by OpenWeatherMap · gradient hover effects
+            </div>
+        </div>
+    </div>
+
+    <script src="./assests/js/script.js">
+
+    </script>
+</body>
+
+</html>

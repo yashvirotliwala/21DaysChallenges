@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+}
+
+/* ---------- DEEP ASTRAL BACKGROUND (dynamic gradient) ---------- */
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle at 20% 30%, #0a0f1e, #03060c);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* floating orbs for atmospheric depth */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 80% 20%, rgba(80, 130, 255, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 10% 85%, rgba(210, 110, 230, 0.08) 0%, transparent 55%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* main container: focus on card */
+.weather-app {
+    max-width: 620px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* ---------- CARD: GLASSMORPH + DEEP FOCUS ---------- */
+.weather-card {
+    background: rgba(18, 25, 45, 0.65);
+    backdrop-filter: blur(16px);
+    border-radius: 3rem;
+    padding: 2rem 1.8rem 2.2rem 1.8rem;
+    box-shadow: 0 30px 45px -20px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.08) inset;
+    transition: transform 0.25s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* card subtle hover elevation */
+.weather-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 35px 50px -22px black;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* title & description */
+.brand {
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+
+.brand h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, #E6F0FF, #B9D0FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: #d3e2ff;
+    letter-spacing: -0.3px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.brand p {
+    font-size: 0.85rem;
+    color: #c0d1f1;
+    margin-top: 0.35rem;
+    font-weight: 400;
+}
+
+/* search & controls row */
+.search-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    margin-bottom: 2.2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* input field - focusable & modern */
+.city-input {
+    flex: 2;
+    min-width: 180px;
+    background: rgba(10, 15, 28, 0.7);
+    border: 1px solid rgba(210, 225, 255, 0.25);
+    padding: 0.9rem 1.2rem;
+    border-radius: 3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #f0f3fc;
+    outline: none;
+    transition: all 0.2s ease;
+    backdrop-filter: blur(4px);
+}
+
+.city-input:focus {
+    border-color: #6c8eff;
+    box-shadow: 0 0 0 3px rgba(108, 142, 255, 0.35);
+    background: rgba(15, 22, 40, 0.9);
+}
+
+.city-input::placeholder {
+    color: #8e9fc3;
+    font-weight: 400;
+}
+
+/* GRADIENT BUTTONS + HOVER EFFECTS (all buttons) */
+.btn {
+    border: none;
+    padding: 0.85rem 1.6rem;
+    border-radius: 3rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    background: linear-gradient(105deg, #2a3a6e, #1c2a50);
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.3px;
+    backdrop-filter: blur(2px);
+}
+
+.btn-primary {
+    background: linear-gradient(125deg, #3f5fcf, #2b44a0);
+    border: 1px solid rgba(255, 255, 240, 0.2);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(125deg, #5575e8, #3651b3);
+    transform: scale(1.02);
+    box-shadow: 0 8px 18px rgba(60, 90, 200, 0.4);
+    border-color: rgba(255, 255, 245, 0.4);
+}
+
+.btn-secondary {
+    background: linear-gradient(115deg, #2e3e5e, #202e48);
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(115deg, #405a82, #2a3b5c);
+    transform: scale(1.02);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* location btn specific */
+.location-btn {
+    background: linear-gradient(115deg, #2c4f6e, #1c3a54);
+}
+
+.location-btn:hover {
+    background: linear-gradient(115deg, #3e6d94, #234b6b);
+}
+
+/* weather info card (middle area, data card) */
+.weather-data-card {
+    background: rgba(8, 14, 26, 0.7);
+    backdrop-filter: blur(12px);
+    border-radius: 2rem;
+    padding: 1.8rem 1.6rem;
+    margin: 1rem 0 1.2rem 0;
+    text-align: center;
+    transition: all 0.2s;
+    border: 1px solid rgba(255, 255, 245, 0.15);
+    box-shadow: 0 10px 20px -12px black;
+}
+
+/* main weather info */
+.city-name {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.3rem;
+    letter-spacing: -0.3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.city-name span {
+    background: rgba(255, 255, 245, 0.1);
+    padding: 0.2rem 0.8rem;
+    border-radius: 40px;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.temp {
+    font-size: 4.5rem;
+    font-weight: 800;
+    background: linear-gradient(145deg, #FFFFFF, #bfd6ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin: 0.5rem 0 0.2rem;
+    line-height: 1.1;
+}
+
+.condition {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #cbddf5;
+    text-transform: capitalize;
+    margin: 0.25rem 0;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1.6rem;
+    flex-wrap: wrap;
+}
+
+.detail-item {
+    background: rgba(18, 28, 45, 0.7);
+    border-radius: 1.5rem;
+    padding: 0.7rem 1rem;
+    flex: 1;
+    text-align: center;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(210, 220, 255, 0.1);
+    transition: all 0.2s;
+}
+
+.detail-item:hover {
+    background: rgba(38, 52, 80, 0.7);
+    transform: translateY(-2px);
+    border-color: rgba(110, 150, 255, 0.4);
+}
+
+.detail-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #9eb2dc;
+}
+
+.detail-value {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #eef3ff;
+}
+
+.feels-like {
+    font-size: 0.9rem;
+    color: #b2c4ec;
+    margin-top: 1rem;
+    border-top: 1px dashed rgba(255, 255, 255, 0.15);
+    padding-top: 0.8rem;
+}
+
+/* loading & error states */
+.loading-message,
+.error-message {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-weight: 500;
+    border-radius: 2rem;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(8px);
+}
+
+.loading-message {
+    color: #c2d6ff;
+    font-size: 1rem;
+}
+
+.error-message {
+    color: #ffb7a3;
+    border-left: 3px solid #ff7b5c;
+}
+
+/* extra foot note */
+.footer-note {
+    text-align: center;
+    font-size: 0.7rem;
+    margin-top: 1.5rem;
+    color: #6a7ea3;
+}
+
+/* responsive adjustments */
+@media (max-width: 520px) {
+    .weather-card {
+        padding: 1.4rem;
+    }
+
+    .temp {
+        font-size: 3.2rem;
+    }
+
+    .city-name {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 0.7rem 1.2rem;
+    }
+
+    .detail-value {
+        font-size: 1.1rem;
+    }
+}
+
