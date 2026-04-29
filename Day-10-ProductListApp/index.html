@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interior Product Filter</title>
+<link rel="stylesheet" href="./assests/css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Interior Product Gallery</h1>
+
+    <div class="top-bar">
+        <input type="text" id="searchInput" placeholder="Search products...">
+
+        <div class="buttons">
+            <button onclick="filterProduct('all')">All</button>
+            <button onclick="filterProduct('Furniture')">Furniture</button>
+            <button onclick="filterProduct('Lighting')">Lighting</button>
+            <button onclick="filterProduct('Decor')">Decor</button>
+        </div>
+    </div>
+
+    <div class="product-list" id="productList">
+
+    </div>
+
+</div>
+
+<script src="./assests/js/script.js"></script>
+</body>
+</html>
