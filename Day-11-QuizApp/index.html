@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeQuiz</title>
+    <link rel="stylesheet" href="./assests/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assests/css/style.css">
+</head>
+<body>
+<div class="quiz-container" id="app">
+    <!-- Start Screen -->
+    <div id="startScreen">
+        <div class="header">
+            <h2>📝 CodeQuiz</h2>
+            <p>Test your HTML, CSS & JavaScript knowledge</p>
+        </div>
+        <div class="start-screen">
+            <input type="text" id="userName" placeholder="Enter your name" maxlength="30">
+            <button id="startBtn">Start Quiz</button>
+        </div>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quizScreen" class="hidden">
+        <div class="header">
+            <div class="user-info">
+                <span>👤 <span id="userNameDisplay"></span></span>
+                <span>⭐ Score: <span id="score">0</span>/<span id="totalQs">10</span></span>
+            </div>
+        </div>
+        <div class="timer">⏱️ <span id="timer">30</span> sec</div>
+        <div class="progress">Question <span id="qNum">1</span> of 10</div>
+        <div class="question" id="question"></div>
+        <div class="options" id="options"></div>
+        <button class="next-btn" id="nextBtn" disabled>Next Question →</button>
+    </div>
+
+    <!-- Result Screen -->
+    <div id="resultScreen" class="hidden result-screen">
+        <div class="header">
+            <h2>🎉 Quiz Completed!</h2>
+        </div>
+        <div class="score" id="finalScore">0</div>
+        <p id="feedback"></p>
+        <button id="playAgainBtn">Play Again</button>
+    </div>
+</div>
+
+    <script src="assests/js/script.js"></script>
+</body>
+</html>
