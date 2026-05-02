@@ -1,5 +1,3 @@
-// Replace your OLD script.js with this FIXED version
-
 const password = document.getElementById("password");
 const lengthInput = document.getElementById("length");
 const lengthValue = document.getElementById("lengthValue");
@@ -81,7 +79,6 @@ function checkStrength(pass) {
     }
 }
 
-// Copy Button
 copyBtn.addEventListener("click", () => {
 
     if (password.value === "") return;
