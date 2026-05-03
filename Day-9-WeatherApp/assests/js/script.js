@@ -1,5 +1,3 @@
-
-
 const cityInput = document.getElementById("cityInput");
 const searchBtn = document.getElementById("searchBtn");
 const weatherDisplay = document.getElementById("weatherDisplay");
