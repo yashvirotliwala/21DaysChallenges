@@ -1,0 +1,95 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Professional Modal / Popup System</title>
+<link rel="stylesheet" href="assests/css/style.css" />
+</head>
+<body>
+
+<!-- Background -->
+<div class="page-wrapper">
+    <header class="hero">
+        <div class="hero-content">
+            <p class="tag">Reusable UI Component</p>
+            <h1>Modern Modal / Popup System</h1>
+            <p class="desc">
+                Fully responsive, animated, reusable popup system using
+                HTML, CSS & JavaScript.
+            </p>
+
+            <div class="btn-group">
+                <button class="btn primary open-modal" data-modal="modal1">
+                    Open Info Modal
+                </button>
+
+                <button class="btn dark open-modal" data-modal="modal2">
+                    Open Confirm Modal
+                </button>
+
+                <button class="btn glass open-modal" data-modal="modal3">
+                    Open Form Modal
+                </button>
+            </div>
+        </div>
+    </header>
+</div>
+
+<!-- Overlay -->
+<div class="overlay" id="overlay"></div>
+
+<!-- Modal 1 -->
+<div class="modal" id="modal1">
+    <div class="modal-box">
+        <button class="close-btn">&times;</button>
+        <span class="modal-icon">💡</span>
+        <h2>Information Modal</h2>
+        <p>
+            This is a reusable modal popup with smooth animation,
+            overlay close, ESC close and responsive UI.
+        </p>
+        <button class="btn primary close-action">Got It</button>
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal" id="modal2">
+    <div class="modal-box">
+        <button class="close-btn">&times;</button>
+        <span class="modal-icon">⚠️</span>
+        <h2>Confirm Action</h2>
+        <p>
+            Are you sure you want to continue?
+        </p>
+
+        <div class="modal-actions">
+            <button class="btn danger">Delete</button>
+            <button class="btn dark close-action">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal" id="modal3">
+    <div class="modal-box">
+        <button class="close-btn">&times;</button>
+        <span class="modal-icon">📩</span>
+        <h2>Contact Form</h2>
+
+        <form class="modal-form">
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <textarea rows="4" placeholder="Your Message"></textarea>
+
+            <button type="submit" class="btn primary">
+                Submit
+            </button>
+        </form>
+    </div>
+</div>
+
+<script src="/assests/js/script.js"></script>
+</body>
+</html>
