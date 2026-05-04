@@ -1,0 +1,95 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroMart | E-commerce Product Page</title>
+    <link rel="stylesheet" href="./assests/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body> <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">ElectroMart</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="cart-box"> <i class="fa-solid fa-cart-shopping"></i> <span id="cart-count">0</span> </div>
+        </nav>
+    </header> <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Upgrade Your Home With Smart Electronics</h1>
+            <p>Best Deals on TV, Washing Machine, Mobile & More</p> <a href="#products" class="btn">Shop Now</a>
+        </div>
+        <div class="hero-img"> <img src="https://images.unsplash.com/photo-1581093458791-9d15482442f6?w=800" alt="">
+        </div>
+    </section> <!-- Products -->
+    <section class="products" id="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="card"> <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?w=600" alt="">
+                <h3>Smart LED TV</h3>
+                <p class="price">₹34,999</p>
+                <div class="stars">★★★★★</div> <button onclick="addCart()">Add to Cart</button>
+            </div>
+            <div class="card"> <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=600" alt="">
+                <h3>Washing Machine</h3>
+                <p class="price">₹21,499</p>
+                <div class="stars">★★★★☆</div> <button onclick="addCart()">Add to Cart</button>
+            </div>
+            <div class="card"> <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600" alt="">
+                <h3>Smart Mobile</h3>
+                <p class="price">₹18,999</p>
+                <div class="stars">★★★★★</div> <button onclick="addCart()">Add to Cart</button>
+            </div>
+            <div class="card"> <img src="https://www.designinfo.in/wp-content/uploads/2023/10/HP-Laptop-15-12th-Gen-i5-1235U.webp" alt="">
+                <h3>Laptop</h3>
+                <p class="price">₹89,999</p>
+                <div class="stars">★★★★☆</div> <button onclick="addCart()">Add to Cart</button>
+            </div>
+            <div class="card"> <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRFCP7Bdmm2WoaLbQS7IF_5yDaXCW5-u5hOgyxmZefAXZZAmRkQMevUirVu91OYPTsxYy8ZkCo9gbZ1_c_nSTyn1IBPyvzFmujLxLfLFlzogd5AleXyu-2qVA" alt="">
+                <h3>Headphones</h3>
+                <p class="price">₹2,999</p>
+                <div class="stars">★★★★★</div> <button onclick="addCart()">Add to Cart</button>
+            </div>
+            <div class="card"> <img src="https://www.whirlpool.com/is/image/content/dam/business-unit/whirlpoolv2/en-us/marketing-content/site-assets/page-content/refer-sclp-25/featured-model-2.jpg?$atomic-mobile$&fit=constrain&fmt=webp-alpha&qlt=100&bfc=off" alt="">
+                <h3>Refrigerator</h3>
+                <p class="price">₹57,999</p>
+                <div class="stars">★★★★☆</div> <button onclick="addCart()">Add to Cart</button>
+            </div>
+            <div class="card"> <img src="https://vsprod.vijaysales.com/media/catalog/product/2/3/234551-image.jpg?optimize=medium&fit=bounds&height=500&width=500" alt="">
+                <h3>Air-Dopes</h3>
+                <p class="price">₹999</p>
+                <div class="stars">★★★★★</div> <button onclick="addCart()">Add to Cart</button>
+            </div>
+            <div class="card"> <img src="https://cdn.thewirecutter.com/wp-content/media/2025/04/BEST-TABLETS-2048px-2x1-1.jpg?width=2048&quality=75&crop=2:1&auto=webp" alt="">
+                <h3>Tablets</h3>
+                <p class="price">₹52,999</p>
+                <div class="stars">★★★★☆</div> <button onclick="addCart()">Add to Cart</button>
+            </div>
+            <div class="card"> <img src="https://static.wixstatic.com/media/fd9026_2278803b508a4a38b4b8dc730540d246~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fd9026_2278803b508a4a38b4b8dc730540d246~mv2.jpg" alt="">
+                <h3>Oven</h3>
+                <p class="price">₹60,999</p>
+                <div class="stars">★★★★☆</div> <button onclick="addCart()">Add to Cart</button>
+            </div>
+            <div class="card"> <img src="https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/Communication/Wearable%20Devices/Images/309465_0_stnogk.png" alt="">
+                <h3>I-Watch</h3>
+                <p class="price">₹55,999</p>
+                <div class="stars">★★★★☆</div> <button onclick="addCart()">Add to Cart</button>
+            </div>
+        </div>
+    </section> <!-- Footer -->
+    <footer>
+        <p>© 2026 ElectroMart | All Rights Reserved</p>
+    </footer>
+    <script src="/assests/js/script.js"></script>
+</body>
+
+</html>

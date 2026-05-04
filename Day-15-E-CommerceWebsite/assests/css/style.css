@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f8f9fa;
+    color: #222;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation: slideDown 0.8s ease;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e90ff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #1e90ff;
+}
+
+.cart-box {
+    position: relative;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background: red;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* Hero */
+.hero {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    padding: 70px 8%;
+    gap: 40px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+    animation: leftMove 1s ease;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background: #1e90ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    background: #0d6efd;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(30, 144, 255, 0.3);
+}
+
+.hero-img img {
+    width: 100%;
+    border-radius: 15px;
+    animation: fadeIn 1.3s ease;
+}
+
+/* Products */
+.products {
+    padding: 60px 8%;
+}
+
+.products h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    transition: 0.4s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 22px;
+    color: #1e90ff;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.stars {
+    color: gold;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.card button {
+    padding: 12px 20px;
+    border: none;
+    background: #1e90ff;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background: #0d6efd;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #fff;
+    margin-top: 50px;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Animations */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes leftMove {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive */
+@media(max-width:768px) {
+    .hero-text h1 {
+        font-size: 34px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        text-align: center;
+    }
+}

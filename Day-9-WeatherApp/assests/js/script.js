@@ -3,8 +3,6 @@ const searchBtn = document.getElementById("searchBtn");
 const weatherDisplay = document.getElementById("weatherDisplay");
 const apiKey = "a389bd5a6d85eae06c8bbe2a8aad8285";
 
-
-
 searchBtn.addEventListener("click", getWeather);
 
 
