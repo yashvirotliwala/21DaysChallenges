@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Authentication UI</title>
+<link rel="stylesheet" href="./assests/css/bootstrap.min.css">
+<link rel="stylesheet" href="assests/css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="form-box fade-up">
+
+        <div class="top-buttons">
+            <button id="loginBtn" class="active">Login</button>
+            <button id="signupBtn">Signup</button>
+        </div>
+
+        <h2 id="title">Welcome Back</h2>
+        <p id="subtitle">Login to continue</p>
+
+        <form id="authForm">
+
+            <div class="input-group fade-in">
+                <input type="text" id="name" placeholder="Full Name">
+            </div>
+
+            <div class="input-group fade-in">
+                <input type="email" id="email" placeholder="Email Address" required>
+            </div>
+
+            <div class="input-group fade-in password-box">
+                <input type="password" id="password" placeholder="Password" required>
+                <span id="togglePassword">👁</span>
+            </div>
+
+            <button type="submit" class="submit-btn">Login</button>
+
+        </form>
+
+        <p class="bottom-text" id="switchText">
+            Don't have account? <span id="switchMode">Signup</span>
+        </p>
+
+    </div>
+
+</div>
+
+<script src="assests/js/script.js"></script>
+</body>
+</html>
