@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Dashboard UI</title>
+
+  <!-- Remix Icon -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:sans-serif;
+    }
+
+    body{
+      background:#eef2ff;
+      padding:20px;
+    }
+
+    .container{
+      display:grid;
+      grid-template-columns:250px 1fr;
+      gap:20px;
+      min-height:100vh;
+    }
+
+    /* Sidebar */
+
+    .sidebar{
+      background:#4338ca;
+      color:white;
+      border-radius:20px;
+      padding:25px;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:bold;
+      margin-bottom:40px;
+    }
+
+    .nav{
+      display:flex;
+      flex-direction:column;
+      gap:15px;
+    }
+
+    .nav a{
+      text-decoration:none;
+      color:white;
+      padding:14px;
+      border-radius:12px;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      transition:0.3s;
+    }
+
+    .nav a:hover{
+      background:rgba(255,255,255,0.2);
+    }
+
+    /* Main */
+
+    .main{
+      display:flex;
+      flex-direction:column;
+      gap:20px;
+    }
+
+    .header{
+      background:white;
+      padding:20px;
+      border-radius:20px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      box-shadow:0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .header input{
+      padding:10px 15px;
+      border:none;
+      outline:none;
+      background:#f1f5f9;
+      border-radius:10px;
+      width:220px;
+    }
+
+    /* Cards */
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:20px;
+    }
+
+    .card{
+      padding:25px;
+      border-radius:20px;
+      color:white;
+    }
+
+    .card i{
+      font-size:32px;
+      margin-bottom:15px;
+    }
+
+    .card h2{
+      margin-bottom:5px;
+    }
+
+    .pink{
+      background:#ec4899;
+    }
+
+    .blue{
+      background:#3b82f6;
+    }
+
+    .green{
+      background:#10b981;
+    }
+
+    .orange{
+      background:#f97316;
+    }
+
+    /* Activity Section */
+
+    .activity{
+      background:white;
+      padding:20px;
+      border-radius:20px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .activity h2{
+      margin-bottom:20px;
+    }
+
+    .item{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:15px 0;
+      border-bottom:1px solid #ddd;
+    }
+
+    .left{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .circle{
+      width:45px;
+      height:45px;
+      border-radius:50%;
+      background:#6366f1;
+      color:white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:20px;
+    }
+
+    .time{
+      color:gray;
+      font-size:14px;
+    }
+
+    @media(max-width:800px){
+
+      .container{
+        grid-template-columns:1fr;
+      }
+
+      .header{
+        flex-direction:column;
+        gap:15px;
+        align-items:flex-start;
+      }
+
+      .header input{
+        width:100%;
+      }
+
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+      <div class="logo">AdminX</div>
+
+      <div class="nav">
+
+        <a href="#">
+          <i class="ri-dashboard-fill"></i>
+          Dashboard
+        </a>
+
+        <a href="#">
+          <i class="ri-file-chart-fill"></i>
+          Reports
+        </a>
+
+        <a href="#">
+          <i class="ri-notification-3-fill"></i>
+          Notifications
+        </a>
+
+        <a href="#">
+          <i class="ri-settings-4-fill"></i>
+          Settings
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- Main -->
+
+    <div class="main">
+
+      <!-- Header -->
+
+      <div class="header">
+
+        <div>
+          <h1>Hello, User 👋</h1>
+          <p>Welcome back to your dashboard</p>
+        </div>
+
+        <input type="text" placeholder="Search...">
+
+      </div>
+
+      <!-- Cards -->
+
+      <div class="cards">
+
+        <div class="card pink">
+          <i class="ri-wallet-3-fill"></i>
+          <h2>$9,500</h2>
+          <p>Earnings</p>
+        </div>
+
+        <div class="card blue">
+          <i class="ri-group-fill"></i>
+          <h2>5,240</h2>
+          <p>Customers</p>
+        </div>
+
+        <div class="card green">
+          <i class="ri-shopping-bag-fill"></i>
+          <h2>1,120</h2>
+          <p>Sales</p>
+        </div>
+
+        <div class="card orange">
+          <i class="ri-line-chart-fill"></i>
+          <h2>48%</h2>
+          <p>Growth</p>
+        </div>
+
+      </div>
+
+      <!-- Activity -->
+
+      <div class="activity">
+
+        <h2>Recent Activity</h2>
+
+        <div class="item">
+
+          <div class="left">
+            <div class="circle">
+              <i class="ri-user-fill"></i>
+            </div>
+
+            <div>
+              <h4>New user registered</h4>
+              <p class="time">2 mins ago</p>
+            </div>
+          </div>
+
+          <i class="ri-arrow-right-line"></i>
+
+        </div>
+
+        <div class="item">
+
+          <div class="left">
+            <div class="circle">
+              <i class="ri-shopping-cart-fill"></i>
+            </div>
+
+            <div>
+              <h4>New order placed</h4>
+              <p class="time">10 mins ago</p>
+            </div>
+          </div>
+
+          <i class="ri-arrow-right-line"></i>
+
+        </div>
+
+        <div class="item">
+
+          <div class="left">
+            <div class="circle">
+              <i class="ri-money-dollar-circle-fill"></i>
+            </div>
+
+            <div>
+              <h4>Payment received</h4>
+              <p class="time">30 mins ago</p>
+            </div>
+          </div>
+
+          <i class="ri-arrow-right-line"></i>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
